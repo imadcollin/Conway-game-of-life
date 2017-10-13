@@ -126,7 +126,7 @@ int main (int argc, char * argv[]) {
     /*Game of Life*/
     
     gettimeofday(&ts,NULL);
-#pragma omp parallel  private (i,j)
+#pragma omp parallel  private (i,j) reduction(+:nbrs)
     {
         for (t = 0 ; t < T ; t++) {
             
