@@ -7,3 +7,14 @@
 1- Best performance.
 2- Lest overhead.
 3- Work-Sharing 
+
+### Build 
+Terminal command: 
+
+```
+gcc-7 -fopenmp  main.c -o output 
+```
+
+```
+./ output stepsNo arraySize
+```
