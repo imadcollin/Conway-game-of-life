@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		84734E431F90D8CC006CB60B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84734E421F90D8CC006CB60B /* main.cpp */; };
+		84734E501F90DAF0006CB60B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 84734E4F1F90DAF0006CB60B /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		84734E3D1F90D8CC006CB60B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		84734E4B1F90DAF0006CB60B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		84734E3F1F90D8CC006CB60B /* Conway-game-of-life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Conway-game-of-life"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84734E421F90D8CC006CB60B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		84734E4D1F90DAF0006CB60B /* game-in-c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "game-in-c"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84734E4F1F90DAF0006CB60B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84734E3C1F90D8CC006CB60B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84734E4A1F90DAF0006CB60B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				84734E411F90D8CC006CB60B /* Conway-game-of-life */,
+				84734E4E1F90DAF0006CB60B /* game-in-c */,
 				84734E401F90D8CC006CB60B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				84734E3F1F90D8CC006CB60B /* Conway-game-of-life */,
+				84734E4D1F90DAF0006CB60B /* game-in-c */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				84734E421F90D8CC006CB60B /* main.cpp */,
 			);
 			path = "Conway-game-of-life";
+			sourceTree = "<group>";
+		};
+		84734E4E1F90DAF0006CB60B /* game-in-c */ = {
+			isa = PBXGroup;
+			children = (
+				84734E4F1F90DAF0006CB60B /* main.c */,
+			);
+			path = "game-in-c";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = 84734E3F1F90D8CC006CB60B /* Conway-game-of-life */;
 			productType = "com.apple.product-type.tool";
 		};
+		84734E4C1F90DAF0006CB60B /* game-in-c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84734E511F90DAF0006CB60B /* Build configuration list for PBXNativeTarget "game-in-c" */;
+			buildPhases = (
+				84734E491F90DAF0006CB60B /* Sources */,
+				84734E4A1F90DAF0006CB60B /* Frameworks */,
+				84734E4B1F90DAF0006CB60B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "game-in-c";
+			productName = "game-in-c";
+			productReference = 84734E4D1F90DAF0006CB60B /* game-in-c */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,10 @@
 				ORGANIZATIONNAME = "Imad Collin";
 				TargetAttributes = {
 					84734E3E1F90D8CC006CB60B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					84734E4C1F90DAF0006CB60B = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -110,6 +160,7 @@
 			projectRoot = "";
 			targets = (
 				84734E3E1F90D8CC006CB60B /* Conway-game-of-life */,
+				84734E4C1F90DAF0006CB60B /* game-in-c */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +171,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				84734E431F90D8CC006CB60B /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84734E491F90DAF0006CB60B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84734E501F90DAF0006CB60B /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +304,22 @@
 			};
 			name = Release;
 		};
+		84734E521F90DAF0006CB60B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84734E531F90DAF0006CB60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -262,6 +337,15 @@
 			buildConfigurations = (
 				84734E471F90D8CC006CB60B /* Debug */,
 				84734E481F90D8CC006CB60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84734E511F90DAF0006CB60B /* Build configuration list for PBXNativeTarget "game-in-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84734E521F90DAF0006CB60B /* Debug */,
+				84734E531F90DAF0006CB60B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
